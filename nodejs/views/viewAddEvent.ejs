@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mirco Golutti mirco.golutti@gmail.com">
+
+    <title>
+        <%= title %>
+    </title>
+
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/project/project.css" rel="stylesheet">
+    <link href="css/bootstrap/cover.css" rel="stylesheet">
+</head>
+
+<body class="d-flex h-100 text-center text-bg-dark">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">Leonardo</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link fw-bold py-1 px-0" aria-current="page" href="/">Home</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="/viewCalendar">Calendar</a>
+                    <a class="nav-link fw-bold py-1 px-0 active" href="/viewAllEvents">ViewAllEvents</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="/admin">Admin</a>  
+                </nav>
+            </div>
+        </header>
+
+        <main class="px-3">
+           
+            <h2>Add </h2>
+
+            <form method="post" action="/addEvent">
+                <input type="hidden" class="form-control" name="_id" value="">
+                <div class="row mb-3">
+                    <label for="name_event" class="col-sm-2 col-form-label">Name Event</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="name_event" value="">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="img_name" class="col-sm-2 col-form-label">Image Name</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" name="img_name" value="">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <input class="form-check-input" type="checkbox" name="allday_alarm" disable>
+                        <label class="form-check-label" for="allday_alarm">  Allday Alarm  </label>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="time_start_alarm" class="col-sm-2 col-form-label">Start Time</label>
+                    <div class="col-sm-10">
+                        <input type="time" class="form-control" name="time_start_alarm" value="" >
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="time_stop_alarm" class="col-sm-2 col-form-label">Stop Time</label>
+                    <div class="col-sm-10">
+                        <input type="time" class="form-control" name="time_stop_alarm" value="" >
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-12">
+                        <input class="form-check-input" type="checkbox" name="use_speech" disable>
+                        <label class="form-check-label" for="use_speech">  Use Speech  </label>
+                    </div>                                          
+                    <label for="string_speech" class="col-sm-2 col-form-label">Voice</label> 
+                    <div class="col-sm-10">                        
+                        <input type="text" class="form-control" name="string_speech" value="">
+                    </div>                    
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="use_cucina_c1_seduto_al_tavolo" disable>
+                        <label class="form-check-label" for="use_cucina_c1_seduto_al_tavolo">  Use c1_seduto_al_tavolo  </label>
+                    </div>                                          
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="value_cucina_c1_seduto_al_tavolo" disable>
+                        <label class="form-check-label" for="value_cucina_c1_seduto_al_tavolo">  Value c1_seduto_al_tavolo  </label>
+                    </div>                     
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="use_cucina_c2_presenza_nella_stanza" disable>
+                        <label class="form-check-label" for="use_cucina_c2_presenza_nella_stanza">  Use c2_presenza_nella_stanza  </label>
+                    </div>                                          
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="value_cucina_c2_presenza_nella_stanza"  disable>
+                        <label class="form-check-label" for="value_cucina_c2_presenza_nella_stanza">  Value c2_presenza_nella_stanza  </label>
+                    </div>                     
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="use_cucina_c3_piatti_sul_tavolo"  disable>
+                        <label class="form-check-label" for="use_cucina_c3_piatti_sul_tavolo">  Use c3_piatti_sul_tavolo  </label>
+                    </div>                                          
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="value_cucina_c3_piatti_sul_tavolo"  disable>
+                        <label class="form-check-label" for="value_cucina_c3_piatti_sul_tavolo">  Value c3_piatti_sul_tavolo  </label>
+                    </div>                     
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="use_cucina_c4_chiusura_frigor"  disable>
+                        <label class="form-check-label" for="use_cucina_c4_chiusura_frigor">  Use c4_chiusura_frigor  </label>
+                    </div>                                          
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="value_cucina_c4_chiusura_frigor"  disable>
+                        <label class="form-check-label" for="value_cucina_c4_chiusura_frigor">  Value c4_chiusura_frigor  </label>
+                    </div>                     
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="use_camera_b1_sdraiato_sul_letto"  disable>
+                        <label class="form-check-label" for="use_camera_b1_sdraiato_sul_letto">  Use b1_sdraiato_sul_letto  </label>
+                    </div>                                          
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="value_camera_b1_sdraiato_sul_letto"  disable>
+                        <label class="form-check-label" for="value_camera_b1_sdraiato_sul_letto">  Value b1_sdraiato_sul_letto  </label>
+                    </div>                     
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="use_camera_b2_presenza_nella_stanza"  disable>
+                        <label class="form-check-label" for="use_camera_b2_presenza_nella_stanza">  Use b2_presenza_nella_stanza  </label>
+                    </div>                                          
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="value_camera_b2_presenza_nella_stanza"  disable>
+                        <label class="form-check-label" for="value_camera_b2_presenza_nella_stanza">  Value b2_presenza_nella_stanza  </label>
+                    </div>                     
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="use_sala_s1_presenza_sul_divano"  disable>
+                        <label class="form-check-label" for="use_sala_s1_presenza_sul_divano">  Use s1_presenza_sul_divano  </label>
+                    </div>                                          
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="value_sala_s1_presenza_sul_divano"  disable>
+                        <label class="form-check-label" for="value_sala_s1_presenza_sul_divano">  Value s1_presenza_sul_divano  </label>
+                    </div>                     
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="use_sala_s2_presenza_nella_stanza"  disable>
+                        <label class="form-check-label" for="use_sala_s2_presenza_nella_stanza">  Use s2_presenza_nella_stanza  </label>
+                    </div>                                          
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="value_sala_s2_presenza_nella_stanza"  disable>
+                        <label class="form-check-label" for="value_sala_s2_presenza_nella_stanza">  Value s2_presenza_nella_stanza  </label>
+                    </div>                     
+                </div>
+                <div class="row mb-3">
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="use_sala_s5_passaggio_camera_inferiore"  disable>
+                        <label class="form-check-label" for="use_sala_s5_passaggio_camera_inferiore">  Use s5_passaggio_camera_inferiore  </label>
+                    </div>                                          
+                    <div class="col-sm-6">
+                        <input class="form-check-input" type="checkbox" name="value_sala_s5_passaggio_camera_inferiore"  disable>
+                        <label class="form-check-label" for="value_sala_s5_passaggio_camera_inferiore">  Value s5_passaggio_camera_inferiore  </label>
+                    </div>                     
+                </div>
+
+
+                <button type="submit" class="btn btn-primary" >Save</button>
+            </form>
+            
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            <p>Created by Mirco Golutti </p>
+        </footer>
+    </div>
+
+
+    <script src="js/jquery/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="/js/project/saveEvent.js"></script>
+</body>
+
+</html>

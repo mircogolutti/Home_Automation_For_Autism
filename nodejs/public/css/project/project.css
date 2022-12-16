@@ -1,0 +1,19 @@
+/*
+ * Stile
+ */
+
+ img {
+  width: 70%;
+}
+
+.img-table{
+  width: 100px;
+}
+
+.img-delete{
+  width: 30px;
+}
+
+.img-view-all-event{
+  width: 60px;
+}

@@ -1,0 +1,173 @@
+[{
+  "_id": {
+    "$oid": "6368ce6ab8ad272b3d015e8b"
+  },
+  "name_event": "Lavare Piatti",
+  "event_done": false,
+  "time_start_alarm": {
+    "$date": {
+      "$numberLong": "1667786450571"
+    }
+  },
+  "time_stop_alarm": {
+    "$date": {
+      "$numberLong": "1667822450571"
+    }
+  },
+  "allday_alarm": false,
+  "delay_on_event": 0,
+  "delay_off_event": 0,
+  "img_name": "lavare_piatti.png",
+  "use_cucina_c1_seduto_al_tavolo": true,
+  "use_cucina_c2_presenza_nella_stanza": true,
+  "use_cucina_c3_piatti_sul_tavolo": true,
+  "use_cucina_c4_chiusura_frigor": false,
+  "use_camera_b1_sdraiato_sul_letto": false,
+  "use_camera_b2_presenza_nella_stanza": false,
+  "use_sala_s1_presenza_sul_divano": false,
+  "use_sala_s2_presenza_nella_stanza": false,
+  "use_sala_s5_passaggio_camera_inferiore": false,
+  "value_cucina_c1_seduto_al_tavolo": false,
+  "value_cucina_c2_presenza_nella_stanza": true,
+  "value_cucina_c3_piatti_sul_tavolo": false,
+  "value_cucina_c4_chiusura_frigor": false,
+  "value_camera_b1_sdraiato_sul_letto": false,
+  "value_camera_b2_presenza_nella_stanza": false,
+  "value_sala_s1_presenza_sul_divano": false,
+  "value_sala_s2_presenza_nella_stanza": false,
+  "value_sala_s5_passaggio_camera_inferiore": false,
+  "__v": 0,
+  "_msgid": "b634920da5592202"
+},{
+  "_id": {
+    "$oid": "6368ce8d81ab08c1efa4093f"
+  },
+  "name_event": "Pranzo",
+  "event_done": false,
+  "time_start_alarm": {
+    "$date": {
+      "$numberLong": "1667822510571"
+    }
+  },
+  "time_stop_alarm": {
+    "$date": {
+      "$numberLong": "1667858450571"
+    }
+  },
+  "allday_alarm": false,
+  "delay_on_event": 0,
+  "delay_off_event": 0,
+  "img_name": "pranzo.png",
+  "use_cucina_c1_seduto_al_tavolo": true,
+  "use_cucina_c2_presenza_nella_stanza": true,
+  "use_cucina_c3_piatti_sul_tavolo": true,
+  "use_cucina_c4_chiusura_frigor": false,
+  "use_camera_b1_sdraiato_sul_letto": false,
+  "use_camera_b2_presenza_nella_stanza": false,
+  "use_sala_s1_presenza_sul_divano": false,
+  "use_sala_s2_presenza_nella_stanza": false,
+  "use_sala_s5_passaggio_camera_inferiore": false,
+  "value_cucina_c1_seduto_al_tavolo": false,
+  "value_cucina_c2_presenza_nella_stanza": true,
+  "value_cucina_c3_piatti_sul_tavolo": false,
+  "value_cucina_c4_chiusura_frigor": false,
+  "value_camera_b1_sdraiato_sul_letto": false,
+  "value_camera_b2_presenza_nella_stanza": false,
+  "value_sala_s1_presenza_sul_divano": false,
+  "value_sala_s2_presenza_nella_stanza": false,
+  "value_sala_s5_passaggio_camera_inferiore": false,
+  "__v": 0,
+  "_msgid": "b634920da5592202"
+},{
+  "_id": {
+    "$oid": "6368dded81ab08c1efa40940"
+  },
+  "name_event": "Frigor",
+  "event_done": true,
+  "time_start_alarm": {
+    "$date": {
+      "$numberLong": "1667822510571"
+    }
+  },
+  "time_stop_alarm": {
+    "$date": {
+      "$numberLong": "1667858450571"
+    }
+  },
+  "allday_alarm": true,
+  "delay_on_event": 0,
+  "delay_off_event": 0,
+  "img_name": "frigor.png",
+  "use_cucina_c1_seduto_al_tavolo": false,
+  "use_cucina_c2_presenza_nella_stanza": false,
+  "use_cucina_c3_piatti_sul_tavolo": false,
+  "use_cucina_c4_chiusura_frigor": true,
+  "use_camera_b1_sdraiato_sul_letto": false,
+  "use_camera_b2_presenza_nella_stanza": false,
+  "use_sala_s1_presenza_sul_divano": false,
+  "use_sala_s2_presenza_nella_stanza": false,
+  "use_sala_s5_passaggio_camera_inferiore": false,
+  "value_cucina_c1_seduto_al_tavolo": false,
+  "value_cucina_c2_presenza_nella_stanza": true,
+  "value_cucina_c3_piatti_sul_tavolo": false,
+  "value_cucina_c4_chiusura_frigor": false,
+  "value_camera_b1_sdraiato_sul_letto": false,
+  "value_camera_b2_presenza_nella_stanza": false,
+  "value_sala_s1_presenza_sul_divano": false,
+  "value_sala_s2_presenza_nella_stanza": false,
+  "value_sala_s5_passaggio_camera_inferiore": false,
+  "__v": 0,
+  "_msgid": "b634920da5592202"
+},{
+  "_id": {
+    "$oid": "636919b929ea0d6426abb770"
+  },
+  "name_event": "Svaglia",
+  "event_done": false,
+  "time_start_alarm": {
+    "$date": {
+      "$numberLong": "1667822409441"
+    }
+  },
+  "time_stop_alarm": {
+    "$date": {
+      "$numberLong": "1667822409441"
+    }
+  },
+  "allday_alarm": false,
+  "delay_on_event": 0,
+  "delay_off_event": 0,
+  "time_delay_on": {
+    "$date": {
+      "$numberLong": "1667822409441"
+    }
+  },
+  "time_delay_off": {
+    "$date": {
+      "$numberLong": "1667822409441"
+    }
+  },
+  "img_name": "sveglia.png",
+  "use_cucina_c1_seduto_al_tavolo": true,
+  "use_cucina_c2_presenza_nella_stanza": true,
+  "use_cucina_c3_piatti_sul_tavolo": true,
+  "use_cucina_c4_chiusura_frigor": false,
+  "use_camera_b1_sdraiato_sul_letto": false,
+  "use_camera_b2_presenza_nella_stanza": false,
+  "use_sala_s1_presenza_sul_divano": false,
+  "use_sala_s2_presenza_nella_stanza": false,
+  "use_sala_s5_passaggio_camera_inferiore": false,
+  "value_cucina_c1_seduto_al_tavolo": false,
+  "value_cucina_c2_presenza_nella_stanza": true,
+  "value_cucina_c3_piatti_sul_tavolo": false,
+  "value_cucina_c4_chiusura_frigor": false,
+  "value_camera_b1_sdraiato_sul_letto": false,
+  "value_camera_b2_presenza_nella_stanza": false,
+  "value_sala_s1_presenza_sul_divano": false,
+  "value_sala_s2_presenza_nella_stanza": false,
+  "value_sala_s5_passaggio_camera_inferiore": false,
+  "__v": 0,
+  "_msgid": "b634920da5592202",
+  "string_speech": "Buongoirno Leonardo, è ora di svegliarsi",
+  "use_speech": "false"
+}]
